@@ -1,0 +1,12 @@
+# Your API key
+# You can get this from https://panel.wallubot.com/addons
+api-key: "YOUR_API_KEY"
+# By default, uses "/wallu messageplayer" to send the message, color codes (also HEX) work here.
+# <player> will be replaced with the player's name
+# <message> will be replaced with the chatbot message
+# You can replace it this with any other command like /msg or /broadcast
+response-commands:
+  - "wallu messageplayer <player> &7Wallu (AI): &f<message>"
+# Used as additional context for the AI
+# E.g., "Toppe's Survival Server"
+server-name: "a Minecraft server"

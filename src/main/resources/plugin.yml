@@ -1,0 +1,14 @@
+main: com.wallubot.addons.spigot.WalluSpigotAddon
+version: 0.1.0
+name: WallubotSpigot
+author: toppev
+website: https://wallubot.com
+description: Spigot addon for Wallubot. Wallu is a chatbot for automated support.
+commands:
+  wallu:
+    aliases: [wallubot]
+
+permissions:
+  wallubot.admin:
+    description: Admin permissions to /wallu admin commands, update notifications etc.
+    default: false

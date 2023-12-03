@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "127.0.0.1:25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      VIEW_DISTANCE: 4 # perf
+      MODE: "creative"
+      DIFFICULTY: "peaceful"
+      MOTD: "wallubot-spigot local test server"
+      LEVEL_TYPE: "flat"
+      ALLOW_NETHER: "false"
+      ALLOW_FLIGHT: "true"
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./test-server-data:/data
